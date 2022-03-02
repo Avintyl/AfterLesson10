@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/element_standard_height"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etPictureQuery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/element_standard_height"
+            android:autofillHints="no"
+            android:gravity="center"
+            android:hint="@string/activity_main_search_all_pictures"
+            android:inputType="text"
+            android:textAllCaps="false"
+            android:textSize="@dimen/element_standard_text_size"
+            app:layout_constraintStart_toStartOf="@id/clPanel"
+            app:layout_constraintTop_toTopOf="@+id/clPanel" />
+
+        <Button
+            android:id="@+id/btnClearQuery"
+            android:layout_width="@dimen/element_standard_height"
+            android:layout_height="@dimen/element_standard_height"
+            android:background="@drawable/clear_query"
+            app:layout_constraintEnd_toEndOf="@id/clPanel"
+            app:layout_constraintTop_toTopOf="@+id/clPanel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnSearchPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/element_standard_margin"
+        android:text="@string/activity_main_button_search_the_picture"
+        android:textAllCaps="false"
+        android:textSize="@dimen/element_small_text_size" />
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="@dimen/element_standard_margin"
+        android:contentDescription="@string/activity_main_ivPicture_picture_on_query" />
+
+</LinearLayout>

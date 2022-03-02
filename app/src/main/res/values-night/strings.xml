@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AfterLesson10</string>
+    <string name="activity_main_search_all_pictures">Search all\'s pictures</string>
+    <string name="activity_main_button_search_the_picture">Search the picture!</string>
+    <string name="activity_main_ivPicture_picture_on_query">Picture on query</string>
+</resources>
